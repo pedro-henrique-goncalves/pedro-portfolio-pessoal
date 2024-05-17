@@ -1,0 +1,154 @@
+/* Configuração padrão do body, adicionando fonte, removendo margem e espaçamento, adicionando cor de fundo e dos textos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #363636;
+    color: #fff;
+}
+
+header {
+    margin-bottom: 40px;
+    background-color: #1C1C1C;
+}
+
+h1 {
+    font-size: 55px;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 20px;
+}
+
+h2 {
+    font-size: 50px;
+    margin: 10px 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 10px;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Utilizei o pseudo-elemento after e a pseudo-classe hover para 
+    adicionar um efeito de underline nos links do menu */
+
+.menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: width .3s;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.pagina-principal {
+    margin-left: 40px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+}
+
+.area-perfil {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 2px solid #1b1b1b;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #181717;
+    background-color: #2c2c2c;
+    width: 350px;
+    height: 400px;
+    left: 0;
+}
+
+.area-foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 5px;
+}
+
+.foto {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    border: 2px solid #1b1b1b;
+    box-shadow: 2px 2px 8px #181717;
+}
+
+.area-sobre-mim {
+    font-size: 22px;
+    white-space-collapse: break-spaces;
+
+}
+
+.area-portfolio {
+    display: flex;
+}
+
+.imagem-portfolio {
+    width: 280px;
+    height: 170px;
+    border: 2px solid #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px #181717;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagem-portfolio:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 1440px){
+    .area-sobre-mim {
+        font-size: 18px;
+    }
+}
+
+.area-formulario {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.formulario {
+    margin-top: 50px;
+}
+
+
+footer {
+    background-color: #1C1C1C;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

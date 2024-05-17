@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Porfólio Pessoal</title>
+</head>
+<body>
+    <header>
+        <h1>Portfólio Pedro Henrique</h1>
+        <!-- Menu de navegação do site -->
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="formacao-academica.html">Formação Acadêmica</a></li>
+                <li><a href="portfolio.html">Portfólio</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Area principal do site, dividida em duas partes: perfil e formulário de contato -->
+    <section class="pagina-principal">
+        <div class="area-perfil">
+            <div class="area-foto">
+                <img class="foto" src="foto.jpeg" alt="foto">
+            </div>
+            <div>
+                <p><strong>Profissão:</strong> Desenvolvedor Web Full Stack</p>
+                <p><strong>Tecnologias:</strong> HTML, CSS, JavaScript, PHP e MySQL.</p>
+            </div>
+        </div>
+        <div class="area-formulario">
+            <h2>Informações de Contato</h2>
+            <span>Email: pedro7897@hotmail.com</span> 
+            <span>Telefone: (41) 99999-9999</span>
+            <table class="formulario">
+                <tr>
+                    <th><label for="nome">Nome:</label></th>
+                    <td><input type="text" id="nome" name="nome"></td>
+                </tr>
+                <tr>
+                    <th><label for="email">Email:</label></th>
+                    <td><input type="email" id="email" name="email"></td>
+                </tr>
+                <tr>
+                    <th><label for="telefone">Telefone:</label></th>
+                    <td><input type="tel" id="telefone" name="telefone"></td>
+                </tr>
+                <tr>
+                    <th><label for="mensagem">Mensagem:</label></th>
+                    <td><textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="8" cols="25"></textarea></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button>Enviar</button></td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <footer>
+        Desenvolvido por: Pedro Henrique Gonçalves
+    </footer>
+</body>
+</html>
